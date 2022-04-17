@@ -15,6 +15,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 
 html {
@@ -70,10 +71,7 @@ li {
   list-style-type: none;
 }
 
-section {
-  margin-top: 150px;
-  background-color: #fff;
-}
+
 
 .navbar-brand {
   font-size: 1.6rem;
@@ -95,6 +93,7 @@ section {
   top: 0;
   z-index: 9999;
   background-color: white;
+  padding: 0.7rem 0;
 }
 
 /*  */
@@ -200,7 +199,8 @@ svg {
   color: var(--primary);
   border-color: #dc4f72;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
   padding: 12px 25px;
   display: inline-block;
 }
@@ -226,17 +226,42 @@ svg {
 }
 
 .title {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 3rem;
   color: var(--title-color);
 }
+.wrapper p{
+  font-size: 1.3rem;
+}
+/* modify by phu background-header */
+.section-1{
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),url(../img/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+}
+.sc1_padding{
+  padding-top: 7rem;
+}
+.wrapper{
+  padding-top: 10rem;
+}
+
+/*  */
 
 .section-1 img {
   background-size: 110%;
   transform: rotate(180deg);
   position: relative;
-  bottom: 100px;
+  bottom: 0px;
 }
-
+/* modify phu */
+.section-2{
+  padding-top: 5rem;
+}
+/*  */
 .section-2 .inner {
   padding: 3rem 1rem;
   transform: translateY(10px);
