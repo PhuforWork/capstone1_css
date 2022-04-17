@@ -106,21 +106,25 @@ section {
   width: 40%;
 }
 /* vqp97 modify */
-.dropdown-menu {
+.dropdown-item {
   position: relative;
 }
-.dropdown-menu .dropdown-item::after {
+
+.dropdown-item span::after {
   content: "";
   position: absolute;
-  bottom: 10px;
-  left: 0px;
+  bottom: 2px;
+  left: 25px;
   height: 2px;
   width: 0%;
   background-color: var(--primary);
   transition: var(--transition);
 }
-.dropdown-item:hover::after {
-  width: 40%;
+.dropdown-item span:hover::after {
+  width: 20%;
+}
+.dropdown-menu {
+  left: 0;
 }
 /*  */
 .nav {
@@ -323,4 +327,11 @@ svg {
 }
 .card-4:hover .thumb img {
   filter: grayscale(0);
+}
+/* responsive by Phu */
+@media (min-width: 1500px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    transform: translateX(-45px);
+  }
 }
