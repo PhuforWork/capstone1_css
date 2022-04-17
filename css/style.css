@@ -36,7 +36,10 @@ nav,
 section {
   display: block;
 }
-
+/* img {
+  display: block;
+  width: 100%;
+} */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -82,6 +85,9 @@ section {
   font-weight: 900;
 }
 
+nav {
+  position: sticky;
+}
 .nav-item {
   position: relative;
 }
@@ -89,7 +95,7 @@ section {
 .nav-item::after {
   content: "";
   position: absolute;
-  bottom: 10px;
+  bottom: 30px;
   left: 10px;
   height: 3px;
   width: 0%;
@@ -188,7 +194,9 @@ svg {
   transform: translateY(0);
   box-shadow: 1px 10px 15px -5px rgba(0, 0, 0, 0.31);
 }
-
+.section-2 img {
+  background-size: 40%;
+}
 .section-2 .about {
   width: 90%;
   height: 100%;
