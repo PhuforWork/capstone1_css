@@ -32,7 +32,8 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #fff; 
+}
 
 
 hr {
@@ -50,6 +51,7 @@ li {
 }
 section {
     margin-top:150px;
+    background-color: #fff;
 }
 .navbar-brand {
     font-size: 1.4rem;
@@ -125,7 +127,6 @@ svg {
     border-color: #dc4f72; }
 
 .title {
-  font-size: 2.5rem;
   font-weight: 600;
   color:var(--title-color);
 }
@@ -150,5 +151,106 @@ svg {
   height: 100%;
   background-position: center;
   object-fit: cover;
-
+  border-radius:8px;
+  transform:translateY(8px);
+  transition: var(--transition);
+}
+.section-2 .about::hover {
+  transform:translateY(0px);
+}
+.stat {
+  margin-top: 150px;
+}
+.stat .card  {
+  border:none;
+  padding-left: 2rem;
+}
+.stat .card > * {
+  margin-bottom: 5px;
+}
+.section-2 .counter {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.section-3 {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+.section-3 .content {
+  height: auto;
+ position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.section-3::after {
+  content: "";
+  position: absolute;
+  z-index:-3 ;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-image:linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)) ,url("../img/bg.jpg");
+  background-position: center;
+  background-position: center;
+  background-attachment: fixed;
+}
+.card-4 {
+  padding:0 20px;
+}
+.card-4 img {
+  width: 100%;
+  filter: grayscale(80%);
+  position:relative;
+  transition: var(--transition);
+}
+.section-4 .thumb {
+  position:relative; 
+  border-radius:10px 10px 0 0;
+  overflow: hidden;
+}
+.card-4 {
+  transform: translateY(10px);
+  transition: var(--transition);
+}
+.thumb .date {
+  position: absolute;
+  top:0;
+  right: 0;
+  font-size: 1rem;
+  width: auto;
+  padding:20px;
+  color:#fff;
+  background: var(--primary);
+}
+#btn1 {
+  color:var(--primary);
+  background: #FDE0E4;
+  border-radius: 16px;
+}
+#btn2 {
+  color:#008001;
+  background: #D3E5D1;
+}
+#btn3 {
+  color:#0000FF;
+  background: #CCCCFF;
+}
+.section-4 .icon {
+  transform:translateX(-5px);
+  transition:var(--transition);
+  display: inline-block;
+}
+.card-4:hover {
+  transform: translateY(0);
+}
+.card-4:hover .icon {
+  transform: translateX(0);
+}
+.card-4:hover .change-color {
+  color:var(--primary);
+}
+.card-4:hover .thumb img {
+  filter:grayscale(0);
 }
