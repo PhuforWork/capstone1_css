@@ -47,14 +47,9 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-<<<<<<< HEAD
-  background-color: #fff;
-}
-=======
   background-color: #fff; 
 }
 
->>>>>>> 96df8e783057f4f09ca77222b7e39e302545127d
 
 hr {
   box-sizing: content-box;
@@ -199,8 +194,6 @@ svg {
   height: 100%;
   background-position: center;
   object-fit: cover;
-<<<<<<< HEAD
-=======
   border-radius:8px;
   transform:translateY(8px);
   transition: var(--transition);
@@ -303,5 +296,4 @@ svg {
 }
 .card-4:hover .thumb img {
   filter:grayscale(0);
->>>>>>> 96df8e783057f4f09ca77222b7e39e302545127d
 }
