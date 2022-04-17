@@ -49,7 +49,7 @@ li {
  list-style-type: none; 
 }
 section {
-    margin-top:100px;
+    margin-top:150px;
 }
 .navbar-brand {
     font-size: 1.4rem;
@@ -81,15 +81,18 @@ section {
 }
 p {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  color:#5A5A5A;
+font-weight: 400; }
+
 a {
-    color: #dc4f72;
+    color:var(--primary);
     text-decoration: none;
     background-color: transparent; 
 }
 a:hover {
     color: #ba254a;
-    text-decoration: underline; }
+    text-decoration:none ; }
 img {
  vertical-align: middle;
  border-style: none; }
@@ -107,9 +110,15 @@ svg {
     color: var(--primary);
     border-color: #dc4f72; 
     text-transform: uppercase;
+    font-size:.9rem;
+    padding:12px 20px;
     display: inline-block;
   }
-
+.btn-red {
+  background-color: var(--primary);
+  color:white;
+  padding:12px 20px;
+}
 .button:hover {
     color: #fff !important;
     background-color: #dc4f72;
@@ -123,5 +132,23 @@ svg {
 .section-1 img {
   background-size: 110%;
   transform:rotate(180deg);
-  display: relative;
+  position: relative;
+  bottom: 100px;
+}
+.section-2 .inner {
+  padding:3rem 1rem;
+  transform:translateY(10px);
+  transition:var(--transition);
+}
+.section-2 .inner:hover{
+  transform:translateY(0);
+  box-shadow: 1px 10px 15px -5px rgba(0,0,0,0.31)
+  ;
+}
+.section-2 .about {
+  width:90%;
+  height: 100%;
+  background-position: center;
+  object-fit: cover;
+
 }
