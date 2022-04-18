@@ -215,6 +215,10 @@ svg {
   padding: 12px 20px;
   display: inline-block;
 }
+.counter {
+  font-size: 3rem;
+  font-weight: 700;
+}
 /*  */
 .btn-red {
   background-color: var(--primary);
@@ -452,4 +456,28 @@ svg {
 }
 .section-6 .nav-item .nav-link::after {
   display: none;
+}
+.section-7 {
+  background: transparent;
+  position: relative;
+}
+
+.section-7::after {
+  content: "";
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),url("../img/b2.jpg");
+  background-size: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
