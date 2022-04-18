@@ -462,8 +462,7 @@ svg {
   display: inline-block;
 }
 /* modify by phu */
-.text_sc4 {
-}
+
 /*  */
 .card-4:hover {
   transform: translateY(0);
@@ -491,10 +490,10 @@ svg {
   }
 }
 .section-5 img {
-  width: 90%;
+  width:90%;
 }
 .section-5 ul {
-  margin-top: 50px;
+  margin-top:50px;
 }
 .fag-page h2 {
   font-size: 1.3rem;
@@ -506,9 +505,10 @@ svg {
 .accordion span {
   display: inline-block;
   transition: var(--transition);
+  
 }
 .accordion button {
-  border: none;
+  border:none;
   outline: none;
 }
 .accordion {
@@ -538,25 +538,26 @@ svg {
   margin-bottom: 50px;
 }
 .section-6 img {
-  width: 100%;
-  border-radius: 10px 10px 0 0;
+  width:100%;
+  border-radius: 10px 10px 0 0 ;
   display: block;
 }
 .section-6 .nav-item .nav-link {
-  color: #5a5a5a;
+  color:#5a5a5a;
 }
 .section-6 .nav-tabs {
-  border-bottom: none;
+  border-bottom:none;
 }
 
 .section-6 .nav-item .nav-link {
-  border: none;
+  border:none;
   font-size: 1.3rem;
   font-weight: 600;
+
 }
 .section-6 .nav-item .active {
-  border-bottom: 3px solid var(--primary);
-  color: var(--primary);
+  border-bottom:3px solid var(--primary); 
+  color:var(--primary)
 }
 .section-6 .nav-item .nav-link::after {
   display: none;
@@ -575,11 +576,10 @@ svg {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("../img/b2.jpg");
+    to right,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),url("../img/b2.jpg");
   background-size: 100%;
   object-fit: cover;
   background-repeat: no-repeat;
