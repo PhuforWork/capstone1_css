@@ -11,9 +11,9 @@
   --transition: all 0.3s linear;
 }
 
-*{
+* {
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 html {
@@ -72,8 +72,6 @@ li {
   list-style-type: none;
 }
 
-
-
 .navbar-brand {
   font-size: 1.6rem;
   font-weight: 900;
@@ -88,7 +86,7 @@ nav .nav-item .nav-link i {
 .collapse .navbar-nav {
   align-items: center;
 }
-.bg_header{
+.bg_header {
   box-shadow: 1px 1px 5px 1px #f1efefbd;
   position: fixed;
   top: 0;
@@ -97,7 +95,7 @@ nav .nav-item .nav-link i {
   padding: 0.9rem 0;
   transition: all 0.5s;
 }
-.header-scroll{
+.header-scroll {
   padding: 0.2rem 0;
 }
 /*  */
@@ -218,6 +216,10 @@ svg {
   padding: 12px 20px;
   display: inline-block;
 }
+.counter {
+  font-size: 3rem;
+  font-weight: 700;
+}
 /*  */
 .btn-red {
   background-color: var(--primary);
@@ -228,7 +230,7 @@ svg {
   font-weight: 700;
   text-transform: uppercase;
 }
-.btn-red:hover{
+.btn-red:hover {
   background-color: #c83c5f;
   color: white;
 }
@@ -244,27 +246,28 @@ svg {
   font-size: 3rem;
   color: var(--title-color);
 }
-.title.title1{
+.title.title1 {
   font-weight: 700;
   font-size: 2.2rem;
   color: var(--title-color);
 }
-.wrapper p{
+.wrapper p {
   font-size: 1.3rem;
 }
 /* modify by phu background-header */
-.section-1{
-  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),url(../img/banner.jpg);
+.section-1 {
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
+    url(../img/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   align-items: center;
 }
-.sc1_padding{
+.sc1_padding {
   padding-top: 7rem;
 }
-.wrapper{
+.wrapper {
   padding-top: 10rem;
 }
 
@@ -277,7 +280,7 @@ svg {
   bottom: 0px;
 }
 /* modify phu */
-.section-2{
+.section-2 {
   padding-top: 5rem;
 }
 /*  */
@@ -295,7 +298,7 @@ svg {
   background-color: white;
 }
 /* modify by phu */
-.inner a{
+.inner a {
   text-decoration: none;
 }
 /*  */
@@ -312,33 +315,33 @@ svg {
   transform: translateY(0px);
 }
 /* section2.5_phu */
-.section2_5{
+.section2_5 {
   padding: 5rem 0;
   background-color: #f7f9fc;
 }
-.pic_sc2_5 img{
+.pic_sc2_5 img {
   width: 100%;
   border-radius: 5px;
   box-shadow: 1px 1px 10px 1px #d3d3da;
   transition: all 0.5s;
 }
-.pic_sc2_5 img:hover{
+.pic_sc2_5 img:hover {
   transform: translateY(-10px);
 }
 /*  */
 /* modify by phu */
-.title.title2{
+.title.title2 {
   font-size: 1rem;
 }
-.row.row1{
+.row.row1 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
 }
-.fnt_cnt{
+.fnt_cnt {
   font-size: 3.2rem;
   font-weight: 700;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 /*  */
 .stat {
@@ -347,7 +350,7 @@ svg {
 .stat .card {
   border: none;
   padding: 2rem 0rem 2rem 2rem;
-  margin: 0 15px ;
+  margin: 0 15px;
 }
 .stat .card > * {
   margin-bottom: 5px;
@@ -367,6 +370,20 @@ svg {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+/* modify by phu */
+.section-3 h3 {
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+.section-3 p {
+  line-height: 24.5px;
+}
+.btn_sc3 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+/*  */
 .section-3::after {
   content: "";
   position: absolute;
@@ -395,10 +412,23 @@ svg {
   transition: var(--transition);
 }
 .section-4 .thumb {
+  width: 100%;
   position: relative;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
+/* modify by phu */
+.card_sc4 {
+  border: 0.5px solid rgba(215, 212, 212, 0.726);
+  border-radius: 10px;
+
+}
+.row2{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/*  */
 .card-4 {
   transform: translateY(10px);
   transition: var(--transition);
@@ -431,6 +461,9 @@ svg {
   transition: var(--transition);
   display: inline-block;
 }
+/* modify by phu */
+
+/*  */
 .card-4:hover {
   transform: translateY(0);
 }
@@ -483,7 +516,6 @@ svg {
   display: flex;
   justify-content: space-around;
   max-width: 450px;
-
 }
 .pane-active {
   transform: rotate(180deg);
@@ -554,4 +586,3 @@ svg {
   background-position: center;
   background-attachment: fixed;
 }
-
