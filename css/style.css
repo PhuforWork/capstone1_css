@@ -35,7 +35,10 @@ nav,
 section {
   display: block;
 }
-
+/* img {
+  display: block;
+  width: 100%;
+} */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -79,7 +82,7 @@ li {
 .header_ctn {
   font-weight: 700;
 }
-.nav-item .nav-link i {
+nav .nav-item .nav-link i {
   font-size: 0.7rem;
 }
 .collapse .navbar-nav {
@@ -453,3 +456,102 @@ svg {
     padding-right: 25px !important;
   }
 }
+.section-5 img {
+  width:90%;
+}
+.section-5 ul {
+  margin-top:50px;
+}
+.fag-page h2 {
+  font-size: 1.3rem;
+}
+.accordion {
+  padding: 0;
+}
+
+.accordion span {
+  display: inline-block;
+  transition: var(--transition);
+  
+}
+.accordion button {
+  border:none;
+  outline: none;
+}
+.accordion {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  max-width: 450px;
+
+}
+.pane-active {
+  transform: rotate(180deg);
+}
+
+.pane {
+  transform: translateY(30px);
+  height: 0;
+  opacity: 0;
+  transition: var(--transition);
+  overflow: hidden;
+}
+.pane-show {
+  transform: translateY(0);
+  opacity: 1;
+  height: auto;
+}
+.section-5 li {
+  display: block;
+  margin-bottom: 50px;
+}
+.section-6 img {
+  width:100%;
+  border-radius: 10px 10px 0 0 ;
+  display: block;
+}
+.section-6 .nav-item .nav-link {
+  color:#5a5a5a;
+}
+.section-6 .nav-tabs {
+  border-bottom:none;
+}
+
+.section-6 .nav-item .nav-link {
+  border:none;
+  font-size: 1.3rem;
+  font-weight: 600;
+
+}
+.section-6 .nav-item .active {
+  border-bottom:3px solid var(--primary); 
+  color:var(--primary)
+}
+.section-6 .nav-item .nav-link::after {
+  display: none;
+}
+.section-7 {
+  background: transparent;
+  position: relative;
+}
+
+.section-7::after {
+  content: "";
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),url("../img/b2.jpg");
+  background-size: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
