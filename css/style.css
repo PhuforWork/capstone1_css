@@ -86,7 +86,7 @@ section {
 .header_ctn {
   font-weight: 700;
 }
-.nav-item .nav-link i {
+nav .nav-item .nav-link i {
   font-size: 0.7rem;
 }
 .collapse .navbar-nav {
@@ -427,4 +427,29 @@ svg {
 .section-5 li {
   display: block;
   margin-bottom: 50px;
+}
+.section-6 img {
+  width:100%;
+  border-radius: 10px 10px 0 0 ;
+  display: block;
+}
+.section-6 .nav-item .nav-link {
+  color:#5a5a5a;
+}
+.section-6 .nav-tabs {
+  border-bottom:none;
+}
+
+.section-6 .nav-item .nav-link {
+  border:none;
+  font-size: 1.3rem;
+  font-weight: 600;
+
+}
+.section-6 .nav-item .active {
+  border-bottom:3px solid var(--primary); 
+  color:var(--primary)
+}
+.section-6 .nav-item .nav-link::after {
+  display: none;
 }
