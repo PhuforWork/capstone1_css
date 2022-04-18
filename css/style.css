@@ -11,10 +11,9 @@
   --transition: all 0.3s linear;
 }
 
-*,
-*::before,
-*::after {
+*{
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 
 html {
@@ -73,10 +72,7 @@ li {
   list-style-type: none;
 }
 
-section {
-  margin-top: 150px;
-  background-color: #fff;
-}
+
 
 .navbar-brand {
   font-size: 1.6rem;
@@ -98,8 +94,12 @@ nav .nav-item .nav-link i {
   top: 0;
   z-index: 9999;
   background-color: white;
+  padding: 0.9rem 0;
+  transition: all 0.5s;
 }
-
+.header-scroll{
+  padding: 0.2rem 0;
+}
 /*  */
 .nav-item {
   position: relative;
@@ -188,6 +188,7 @@ img {
 
 .color-primary {
   color: var(--primary) !important;
+  font-weight: 700;
 }
 
 svg {
@@ -203,27 +204,33 @@ svg {
   color: var(--primary);
   border-color: #dc4f72;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
   padding: 12px 25px;
   display: inline-block;
 }
-.button {
+.btn.button {
   color: var(--primary);
   border-color: #dc4f72;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
   padding: 12px 20px;
   display: inline-block;
-}
-.counter {
-  font-size: 3rem;
-  font-weight: 700;
 }
 /*  */
 .btn-red {
   background-color: var(--primary);
   color: white;
   padding: 12px 20px;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.btn-red:hover{
+  background-color: #c83c5f;
+  color: white;
 }
 
 .button:hover {
@@ -231,32 +238,67 @@ svg {
   background-color: #dc4f72;
   border-color: #dc4f72;
 }
-
+/* title modify_phu */
 .title {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 3rem;
   color: var(--title-color);
 }
+.title.title1{
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: var(--title-color);
+}
+.wrapper p{
+  font-size: 1.3rem;
+}
+/* modify by phu background-header */
+.section-1{
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),url(../img/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+}
+.sc1_padding{
+  padding-top: 7rem;
+}
+.wrapper{
+  padding-top: 10rem;
+}
+
+/*  */
 
 .section-1 img {
   background-size: 110%;
   transform: rotate(180deg);
   position: relative;
-  bottom: 100px;
+  bottom: 0px;
 }
-
+/* modify phu */
+.section-2{
+  padding-top: 5rem;
+}
+/*  */
 .section-2 .inner {
   padding: 3rem 1rem;
   transform: translateY(10px);
   transition: var(--transition);
+  background-color: #f7f9fc;
+  border-radius: 5px;
 }
 
 .section-2 .inner:hover {
   transform: translateY(0);
   box-shadow: 1px 10px 15px -5px rgba(0, 0, 0, 0.31);
+  background-color: white;
 }
-.section-2 img {
-  background-size: 40%;
+/* modify by phu */
+.inner a{
+  text-decoration: none;
 }
+/*  */
 .section-2 .about {
   width: 90%;
   height: 100%;
@@ -269,12 +311,43 @@ svg {
 .section-2 .about::hover {
   transform: translateY(0px);
 }
+/* section2.5_phu */
+.section2_5{
+  padding: 5rem 0;
+  background-color: #f7f9fc;
+}
+.pic_sc2_5 img{
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 1px #d3d3da;
+  transition: all 0.5s;
+}
+.pic_sc2_5 img:hover{
+  transform: translateY(-10px);
+}
+/*  */
+/* modify by phu */
+.title.title2{
+  font-size: 1rem;
+}
+.row.row1{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.fnt_cnt{
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+/*  */
 .stat {
-  margin-top: 150px;
+  padding-top: 100px;
 }
 .stat .card {
   border: none;
-  padding-left: 2rem;
+  padding: 2rem 0rem 2rem 2rem;
+  margin: 0 15px ;
 }
 .stat .card > * {
   margin-bottom: 5px;
@@ -481,3 +554,4 @@ svg {
   background-position: center;
   background-attachment: fixed;
 }
+
