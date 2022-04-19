@@ -498,15 +498,46 @@ svg {
 .row3{
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content:center;
+  margin-left: 0;
+  margin-right: 0;
+}
+.inner1 img{
+  border-radius: 6px;
+  width: 100%;
+}
+.card1{
+  border-radius: 5px;
+  padding: 0.4rem 0;
+}
+.card-header{
+  background-color: white;
+  border-bottom: 0px;
+}
+.card-header p{
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  color: black;
+}
+.card-header p a i{
+  color: black;
+  font-size: 1rem;
+}
+.rotate1{
+  transform: rotate(180deg);
+}
+.card-body p {
+  text-align: left;
 }
 /*  */
-.section-5 img {
+/* .section-5 img {
   width:90%;
-}
-.section-5 ul {
+} */
+/* .section-5 ul {
   margin-top:50px;
-}
+} */
 .fag-page h2 {
   font-size: 1.3rem;
 }
@@ -526,7 +557,7 @@ svg {
 .accordion {
   font-size: 1.2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 450px;
 }
 .pane-active {
@@ -545,10 +576,12 @@ svg {
   opacity: 1;
   height: auto;
 }
+
 .section-5 li {
   display: block;
   margin-bottom: 50px;
 }
+
 .section-6 img {
   width:100%;
   border-radius: 10px 10px 0 0 ;
