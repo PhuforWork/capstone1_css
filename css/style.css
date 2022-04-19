@@ -492,6 +492,7 @@ svg {
 /* modyfied by phu */
 .section-5{
   padding-top: 7rem;
+  padding-bottom: 5rem;
   margin-top: 5rem;
   background-color: #f7f9fc;
 }
@@ -501,10 +502,16 @@ svg {
   justify-content:center;
   margin-left: 0;
   margin-right: 0;
+  padding-top: 2rem;
 }
 .inner1 img{
   border-radius: 6px;
   width: 100%;
+  box-shadow: 0 2px 10px 1px #d3e5d1;
+  transition: var(--transition);
+}
+.inner1 img:hover{
+  transform: translateY(-10px);
 }
 .card1{
   border-radius: 5px;
@@ -581,7 +588,12 @@ svg {
   display: block;
   margin-bottom: 50px;
 }
-
+/* modified by phu */
+.row4{
+  margin-left: 0;
+  margin-right: 0;
+}
+/*  */
 .section-6 img {
   width:100%;
   border-radius: 10px 10px 0 0 ;
@@ -607,6 +619,12 @@ svg {
 .section-6 .nav-item .nav-link::after {
   display: none;
 }
+/* modified by phu */
+.row5{
+  margin-left: 0;
+  margin-right: 0;
+}
+/*  */
 .section-7 {
   background: transparent;
   position: relative;
