@@ -489,6 +489,18 @@ svg {
     padding-right: 25px !important;
   }
 }
+/* modyfied by phu */
+.section-5{
+  padding-top: 7rem;
+  margin-top: 5rem;
+  background-color: #f7f9fc;
+}
+.row3{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+/*  */
 .section-5 img {
   width:90%;
 }
