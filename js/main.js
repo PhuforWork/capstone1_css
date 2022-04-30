@@ -70,3 +70,16 @@ input4.onclick = function () {
     a=0;
   }
 };  
+// 6
+var input5 = document.getElementById("_rotate6");
+var a = 0;
+input5.onclick = function () {
+  a = a + 1;
+  if (a == 1) {
+    input5.classList.add("rotate1");
+  }
+  else if( a==2){
+    input5.classList.remove("rotate1");
+    a=0;
+  }
+};  
