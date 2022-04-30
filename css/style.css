@@ -498,6 +498,7 @@ svg {
   margin-top: 5rem;
   background-color: #f7f9fc;
 }
+
 .row3 {
   display: flex;
   flex-wrap: nowrap;
@@ -725,4 +726,99 @@ svg {
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
+}
+footer h3 {
+  font-size: 1.2rem;
+}
+footer .column {
+  text-align: left;
+}
+.w3l-footer-16-main h3 {
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--title-color);
+  margin-bottom: 30px;
+  font-weight: 700; }
+.w3l-footer .w3l-footer-16-main h4 {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--title-color);
+    margin-bottom: 30px;
+    font-weight: 500; }
+.w3l-footer .ad-text-inf {
+  margin-bottom: 20px; 
+}
+.footer-gd-16 {
+  padding:0;
+}
+.footer-gd-16 li {
+  margin-bottom: 10px;
+}
+.footer-gd-16 a {
+  color: var(--text-color);
+}
+.end-column > * {
+  margin-bottom: 20px;
+}
+.subscribe input[type="email"] {
+  background: var(--light-bg-color);
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  outline: none;
+  width: 78%;
+  color: var(--title-color);
+  font-weight: 600;
+  border-radius: var(--card-curve); 
+}
+.subscribe button {
+  text-align: center;
+  background: var(--primary);
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 20px;
+  cursor: pointer;
+  width: 20%;
+  color: #fff;
+  border-radius: var(--card-curve); }
+
+  .w3l-footer ul.social li,
+.w3l-footer ul.jst-link li {
+  display: inline-block;
+  margin-right: 5px; }
+
+.social a {
+    display: inline-block;
+    color:#5a5a5a;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center; }
+footer .social {
+  display: flex;
+  color:var(--text-color);
+}
+#movetop {
+  /* display: none; */
+  position: fixed;
+  bottom: 75px;
+  right: 0px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color:white;
+  cursor: pointer;
+  width: 50px;
+  height: 45px;
+  background: var(--primary);
+  padding: 0;
+  opacity: .8;
+  transition: 0.3s ease; }
+video {
+  height: 400px;
+  width: 600px;
 }
