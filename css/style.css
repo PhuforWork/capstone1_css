@@ -266,6 +266,7 @@ svg {
   background-size: cover;
   background-attachment: fixed;
   align-items: center;
+  margin-top: 0;
 }
 .sc1_padding {
   padding-top: 7rem;
