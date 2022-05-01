@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <title>
       Masterwork a Corporate Category Bootstrap Responsive Website Template -
@@ -816,8 +816,7 @@
                   <input
                     type="email"
                     name="email"
-                    placeholder="Email
-                              Address"
+                    placeholder="Email Address"
                     required=""
                   />
                   <button class="btn btn_go" type="submit">Go</button>
@@ -868,6 +867,12 @@
       >
         <span class="fa fa-angle-up"></span>
       </button>
+      <!-- darkmode btn -->
+      <div class="toggle-btn" id="_1st-toggle-btn">
+        <input type="checkbox">
+        <span></span>
+      </div>
+      <!--  -->
       <div class="container row align-item-center">
         <div id="v-w3layouts"></div>
         <script>
@@ -924,6 +929,11 @@
       const topFunction = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       };
+      //
+      $(".toggle").click(function (e) {
+        e.preventDefault(); // The flicker is a codepen thing
+        $(this).toggleClass("toggle-on");
+      });
     </script>
   </body>
 </html>
