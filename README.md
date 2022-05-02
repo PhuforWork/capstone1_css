@@ -12,5 +12,6 @@ Vương Quốc Phú :    - Làm phần responsive cho trang web.
                     - Thêm hình ảnh background còn thiếu cho web.
                     - Thay đổi lại collapse menu.
                     - Đóng góp 45%.
+
                     
-                    
+-deploy web + youtube: cả hai. 
