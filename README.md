@@ -15,3 +15,5 @@ Vương Quốc Phú :    - Làm phần responsive cho trang web.
 
                     
 -deploy web + youtube: cả hai. 
+link youtube:https://youtu.be/xRqpVCitJ2U
+link deploy:https://bc-29-capstone.vercel.app/
